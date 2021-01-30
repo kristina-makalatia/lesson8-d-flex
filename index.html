@@ -2,80 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Display Flex  </title>   
-    <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Display Flex & Responsive </title>
+    <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>   
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-   <section class="video-section-bg">
-       <div class="container">
-           <h3> Videos </h3>
-           <div class="videos-wraper">
-               <div class="video1">
-                   <p> EMBEDED YOUTUBE VIDEO GOES HERE</p>
-               </div>
-               <div class="video2">
-                    <p> EMBEDED YOUTUBE VIDEO GOES HERE</p>
-               </div>
-           </div>
-       </div>
-   </section>
-   <section>
+    <header class="header-wraper">
+        <div class="header-flex container-header">
+            <a class="logo" href="#">
+                <img src="https://cdn.worldvectorlogo.com/logos/puma-logo.svg" alt="logo">
+            </a>
+            <nav class="navigation">
+                <ul class="nav-ul">
+                    <li>
+                        <a href="#"> Home</a>
+                    </li>
+                    <li>
+                        <a href="#"> About</a>
+                    </li>
+                    <li>
+                        <a href="#"> Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="text">
+            <p> Lorem Ipsum </p>
+        </div>
+    </header>
+
+    <section>
         <div class="container">
-            <i class="fab fa-facebook-f fb-icon"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="icon-Path-1"></i>
+            <div class="wraper">
+                <div class="box-1"></div>
+                <div class="box-2"></div>
+            </div>
         </div>
     </section>
-   <section class="news-section-bg">
-       <div class="container">
-           <h3> News </h3>
-           <div class="images-wraper">
-                <div class="box size">
-                   <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="article-image">
+
+    <section>
+        <div class="container">
+            <div class="wraper-images">
+                <div class="box-image">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="image">
+                    <p> 1</p>
                 </div>
-                <div class="box size">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="article-image">
+                <div class="box-image">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="image">
+                    <p> 2</p>
                 </div>
-                <div class="box size">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="article-image">
+                <div class="box-image">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="image">
+                    <p> 3</p>
                 </div>
-                <div class="box">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="article-image">
+                <div class="box-image">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="image">
+                    <p> 4</p>
                 </div>
-           </div>
-       </div>
-   </section>
-   <section class="featured-section-bg">
-       <div class="container">
-           <h3> Featured</h3>
-           <div class="article-wraper">
-               <div class="article-box1">
-                    <h4> RESPONSIVE WEB DESIGN</h4>
-                    <div class="image-box">
-                        <img src="img/article-image.svg" alt="article-image">
-                        <p class="box-p">approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation.</p>
-                    </div>
-                    <div class="read">
-                        <a href="#">read more</a>
-                    </div>
-               </div>
-               <div class="article-box2">
-                    <h4> RESPONSIVE WEB DESIGN</h4>
-                    <div class="image-box">
-                        <img src="img/article-image.svg" alt="article-image">
-                        <p class="box-p">approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation.</p>
-                    </div>
-                    <div class="read">
-                        <a href="#">read more</a>
-                    </div>
-               </div>
-           </div>
-       </div>
-   </section>
- 
+            </div>
+        </div>
+    </section>
+
     
 </body>
 </html>
