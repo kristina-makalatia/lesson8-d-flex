@@ -3,70 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Display Flex & Responsive </title>
-    <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>   
+    <!-- seos meta tag -->
+    <meta name="description" content="Our page description">
+    <meta name="keywords" content="html,css,flex,form">
+    <meta name="author" content="kristina">
+    <meta name="google" content="notranslate" />
+    <!-- Fb optimization -->
+    <meta property="og:url"                content="https://kristina-makalatia.github.io/lesson8-d-flex/" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Our fb title" />
+    <meta property="og:description"        content="Our fb description" />
+    <meta property="og:image"              content="https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg" />
+    <title> Forms  </title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header class="header-wraper">
-        <div class="header-flex container-header">
-            <a class="logo" href="#">
-                <img src="https://cdn.worldvectorlogo.com/logos/puma-logo.svg" alt="logo">
-            </a>
-            <nav class="navigation">
-                <ul class="nav-ul">
-                    <li>
-                        <a href="#"> Home</a>
-                    </li>
-                    <li>
-                        <a href="#"> About</a>
-                    </li>
-                    <li>
-                        <a href="#"> Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="burger-icon">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-        <div class="text">
-            <p> Lorem Ipsum </p>
-        </div>
-    </header>
-
     <section>
-        <div class="container">
-            <div class="wraper">
-                <div class="box-1"></div>
-                <div class="box-2"></div>
+        <form class="form">
+            <div class="form-wraper">
+                <label for="fname"> Name </label>
+                <input class="input-wraper" type="text" id="fname" name="fisrtname" placeholder="Please eneter your Name..." required>
             </div>
-        </div>
-    </section>
 
-    <section>
-        <div class="container">
-            <div class="wraper-images">
-                <div class="box-image">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="image">
-                    <p> 1</p>
+            <div class="form-wraper">
+                <label for="pass"> Password </label>
+                <input class="input-wraper" type="password" id="pass" name="mypassword" placeholder="Please Enetr our Password..." required>
+            </div>
+
+            <div class="form-wraper">
+                <label for="email"> E-mail</label>
+                <input class="input-wraper" type="email" id="email" name="myemail" placeholder="enter your email..." required>
+            </div>
+
+            <div class="form-wraper">
+                <label> Your Message</label>
+                <textarea class="textarea" placeholder="enter your review"></textarea>
+            </div>
+
+            <div>
+                <div>
+                    <input type="radio" id="male" name="gender"> 
+                    <label for="male"> Male </label>
                 </div>
-                <div class="box-image">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="image">
-                    <p> 2</p>
-                </div>
-                <div class="box-image">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="image">
-                    <p> 3</p>
-                </div>
-                <div class="box-image">
-                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="image">
-                    <p> 4</p>
+                <div>
+                    <input type="radio" id="female" name="gender"> 
+                    <label for="female"> Female </label>
                 </div>
             </div>
-        </div>
+
+            <div>
+                <div>
+                    <input type="checkbox" id="music" name="hobby1">
+                    <label for="music"> Music </label>
+                </div>
+
+                <div>
+                    <input  type="checkbox" id="dance" name="hobby2">
+                    <label for="dance"> Dance </label>
+                </div>
+            </div>
+            <button class="button-wraper" type="submit"> Send </button>
+        </form>
     </section>
 
     
